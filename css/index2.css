@@ -1,0 +1,277 @@
+body, html {
+    height: 100%;
+    /* transition: all ease-in-out 0.2s; */
+  }
+
+  .header
+  {
+      
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      background-image: url(../img/got4.jpg);
+  }
+
+  h1
+  {
+    margin-right: 20%;
+      margin: 0;
+      padding: 0;
+      color: #111;
+      font-size: 5em;
+  }
+
+  h1 span
+  {
+      display: table-cell;
+      margin: 0;
+      padding: 0;
+      animation: animate 2s linear infinite;
+  }
+
+  h1 span:nth-child(1)
+  {
+      animation-delay: 0s;
+  }
+
+  h1 span:nth-child(2)
+  {
+      animation-delay: 0.25s;
+  }
+
+  h1 span:nth-child(3)
+  {
+      animation-delay: 0.5s;
+  }
+
+  h1 span:nth-child(4)
+  {
+      animation-delay: 0.75s;
+  }
+
+  h1 span:nth-child(5)
+  {
+      animation-delay: 1s;
+  }
+
+  h1 span:nth-child(6)
+  {
+      animation-delay: 1.25s;
+  }
+
+  h1 span:nth-child(7)
+  {
+      animation-delay: 1.5s;
+  }
+
+  /* h1 span:nth-child(8)
+  {
+      animation-delay: 1.75s;
+  } */
+
+  @keyframes animate
+  {
+      0%,100%
+      {
+          color: rgb(110, 153, 235);
+          filter: blur(2px);
+          text-shadow: 0 0 10px 00b3ff,
+                      0 0 20px 00b3ff,
+                      0 0 40px 00b3ff,
+                      0 0 80px 00b3ff,
+                      0 0 120px 00b3ff,
+                      0 0 200px 00b3ff,
+                      0 0 300px 00b3ff;
+                      /* 0 0 400px 00b3ff; */
+          
+      }
+      5%,95%
+      {
+          color: #111;
+          filter: blur(0px);
+          text-shadow: none;
+      }
+  }
+
+  .responsive1 
+      {
+        width: 100%;
+        height: auto;
+      }
+
+      .column
+      {
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+        column-count:2;
+        -moz-column-gap:20px; /* Firefox */
+        -webkit-column-gap:20px; /* Safari and Chrome */
+        column-gap:20px;
+      }
+  
+  .bg {
+    /* The image used */
+    /* background-image: url("../img/f-back2.jpg"); */
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Effect images slider */
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+  /* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+#shaw
+{
+  -webkit-box-direction: reverse
+}
+
+
+
+
+/* Footer */
+
+.linkc a
+{
+	color: white;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+.linkc a:hover
+{
+	color: #fcba03;
+}
+
+/* footer / subcrib */
+.btn1 {
+	border: none; /* Remove borders */
+	color: white; /* Add a text color */
+	padding: 14px 28px; /* Add some padding */
+	cursor: pointer; /* Add a pointer cursor on mouse-over */
+  }
+  
+  .success {background-color: #4CAF50;} /* Green */
+  .success:hover {background-color: #46a049;}
+
+
+
+  /* footer / social network */
+
+  .middle
+  {
+	  /* position: absolute; */
+	  top: 80%;
+	  transform: translateY(5%);
+	  width: 100%;
+	  text-align: center;
+	  /* margin-bottom: 500vh; */
+  }
+
+  .btn-s
+  {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #f1f1f1;
+	margin-top: 2px;
+	margin-right: 20%;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070 ;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+  }
+
+  .btn-s i
+  {
+	  line-height: 40px;
+	  font-size: 20px;
+	  transition: 0.2s linear;
+  }
+
+  .btn-s:hover i
+  {
+	transform: scale(1.3);
+	color: #f1f1f1;
+  }
+
+  .btn-s::before
+  {
+	  content: "";
+	  position: absolute;
+	  width: 120%;
+	  height: 120%;
+	  background: #3498db;
+	  transform: rotate(45deg);
+	  left: -110%;
+	  top: 90%;
+  }
+
+  .btn-s:hover::before
+  {
+	  animation: aaa 0.7s 1;
+	  top: -10%;
+	  left: -10%;
+  }
+
+  @keyframes aaa
+  {
+	  0%
+	  {
+		left: -110%;
+	  	top: 90%;
+	  }
+	  50%
+	  {
+		left: 10%;
+	  	top: -30%;
+	  }
+	  100%
+	  {
+		left: -10%;
+	  	top: -10%;
+	  }
+  }
